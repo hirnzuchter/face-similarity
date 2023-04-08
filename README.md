@@ -1,4 +1,4 @@
-# face-similarity
+# Face Similarity
 ## Introduction
 This Face Similarity model uses Tensorflow to determine whether or not
 two inputs are of the same person, returning a value of 0 if the two are the 
@@ -12,6 +12,7 @@ it may be input to the model. Included also in the notebook are my image process
 functions, which greatly simplify this. This model was trained on google images of
 celebrities, and google images of searches of less-known names. My thoughts are that
 searches of less-known names are more likely to produce images of different people. 
+The google images are produced using my RIG("Retrieve Images on Google") module.
 ## Usage
 ### Engineering
 If you want to play around with the model construction, you will have to:
