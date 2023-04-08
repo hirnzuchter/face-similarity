@@ -4,11 +4,11 @@ This Face Similarity model uses Tensorflow to determine whether or not
 two inputs are of the same person, returning a value of 0 if the two are the 
 same and returning a value of 1 if the two are different. Because of the way
 the "reduction" network was designed, it is noncommutative. Thus, in applications,
-I recommend that you apply a AND(NOT(b1, b2)) to the operation applied to the stacked
-image img1, img2 and img2, img1 respectively. For clarification, the model has as input
-two images of the same size stacked on top of each other. In the "validation" cell of
-Jupyter notebook, there is an example of cleaning and transforming image data such that
-it may be input to the model. Included also in the notebook are my image processing
+I recommend that you apply a AND(NOT(b1, b2)) to the operation(rounded to 0 or 1) 
+applied to the stacked image img1, img2 and img2, img1 respectively. For clarification, 
+the model has as input two images of the same size stacked on top of each other. In the 
+"validation" cell of Jupyter notebook, there is an example of cleaning and transforming image 
+data such that it may be input to the model. Included also in the notebook are my image processing
 functions, which greatly simplify this. This model was trained on google images of
 celebrities, and google images of searches of less-known names. My thoughts are that
 searches of less-known names are more likely to produce images of different people. 
